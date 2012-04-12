@@ -1,4 +1,4 @@
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)\?*$ baseline.php?h=$1 [L,QSA]
+RewriteRule ^(.*)\?*$ b.php?h=$1 [L,QSA]
