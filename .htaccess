@@ -1,4 +1,12 @@
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)\?*$ b.php?h=$1 [L,QSA]
+
+# Rewrite Height
+RewriteRule ^([0-9]+)\/?$ b.php?height=$1 [L]
+
+# Rewrite for Hex Code [6 character only]
+RewriteRule ^([0-9]+)\/([0-9a-zA-Z]{6})\/?$ b.php?height=$1&hex=$2 [L]
+
+# Rewrite for RGB Code
+RewriteRule ^([0-9]+)\/([0-9]{1,3})\/([0-9]{1,3})\/([0-9]{1,3})\/?$ b.php?height=$1&r=$2&g=$3&b=$4 [L]

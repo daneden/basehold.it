@@ -6,7 +6,12 @@
  */
 
 // Check if GET h is set as it is required.
-if (!isset($_GET['h'])) die();
+if (!isset($_GET['height'])) die();
+
+$queryString = array();
+foreach ($_GET as $key => $value) {
+	$queryString[] = $key . '=' . $value;
+}
 
 // Set the content-type to css
 header("Content-type: text/css");
@@ -21,5 +26,5 @@ body:after {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: url(image.php?height=<?php echo $_GET['h']; ?>) repeat top left;
+	background: url(image.php?height=<?php echo implode('&', $queryString); ?>) repeat top left;
 }
