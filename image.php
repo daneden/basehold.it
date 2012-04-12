@@ -44,7 +44,7 @@ header("Content-type: image/png");
 $settings['currentHeight'] = (isset($_GET['height']) && $_GET['height'] > $settings['minHeight']? $_GET['height'] : $settings['currentHeight']);
 
 // Create an image at the right dimensions.
-$im = imagecreate(4, $settings['currentHeight']);
+$im = imagecreate(4, $height['currentHeight']);
 
 // Declare some colours
 $white = imagecolorallocate($im, 255, 255, 255);  
