@@ -5,6 +5,9 @@
  * @author Daniel Eden <dan.eden@me.com>
  */
 
+// Check if GET h is set as it is required.
+if (!isset($_GET['h'])) die();
+
 // Set the content-type to css
 header("Content-type: text/css");
 ?>
