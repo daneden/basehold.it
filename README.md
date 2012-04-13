@@ -7,7 +7,7 @@ Here's an example demonstrating how to get a 24px baseline overlay on your site:
 
 Easy, huh?
 	
-## Further Samples:
+## Further Examples:
 
 Specify a 6 digit hex code: 
 
@@ -16,3 +16,17 @@ Specify a 6 digit hex code:
 Specify separate RGB values: 
 
 ```<link rel="stylesheet" href="http://daneden.me/baseline/24/255/42/85">```
+
+## Baseline Image Examples:
+
+Specify height:
+
+```<link rel="stylesheet" href="http://daneden.me/baseline/i/24">```
+
+Specify a 6 digit hex code: 
+
+```<link rel="stylesheet" href="http://daneden.me/baseline/i/24/DEEFFF">```
+
+Specify separate RGB values: 
+
+```<link rel="stylesheet" href="http://daneden.me/baseline/i/24/255/42/85">```
