@@ -44,7 +44,7 @@ header("Content-type: image/png");
 $settings['currentHeight'] = (isset($_GET['height']) && $_GET['height'] > $settings['minHeight']? $_GET['height'] : $settings['currentHeight']);
 
 // Create an image at the right dimensions.
-$im = imagecreate(4, $height['currentHeight']);
+$im = imagecreate(4, $settings['currentHeight']);
 
 // Declare some colours
 $white = imagecolorallocate($im, 255, 255, 255);  
@@ -54,7 +54,7 @@ $line = imagecolorallocatealpha($im, $colour[0], $colour[1], $colour[2], 100);
 imagecolortransparent($im, $white);
 
 // Draw a line starting bottom left, for 2px along
-imageline($im, 0, $height['currentHeight']-1, 2, $height['currentHeight']-1, $line);
+imageline($im, 0, $settings['currentHeight']-1, 2, $settings['currentHeight']-1, $line);
 
 // Output the image as a png
 imagepng($im);
