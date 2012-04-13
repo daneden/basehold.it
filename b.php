@@ -25,9 +25,9 @@ body:after {
 	content: '';
 	display: block;
 	pointer-events: none;
-	width: 100%;
-	height: 100%;
 	top: <?php echo $offset; ?>;
+	bottom: 0;
 	left: 0;
+	right: 0;
 	background: url(/image.php?<?php echo implode('&', $queryString); ?>) repeat top left;
 }
