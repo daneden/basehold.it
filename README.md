@@ -3,7 +3,7 @@ Get a baseline grid overlay on your site in one painless, javascript-free step.
 
 Here's an example demonstrating how to get a 24px baseline overlay on your site:
 
-```<link rel="stylesheet" href="http://daneden.me/baseline/24">```
+```<link rel="stylesheet" href="http://basehold.it/24">```
 
 Easy, huh?
 	
@@ -11,11 +11,11 @@ Easy, huh?
 
 Specify a 6 digit hex code: 
 
-```<link rel="stylesheet" href="http://daneden.me/baseline/24/DEEFFF">```
+```<link rel="stylesheet" href="http://basehold.it/24/DEEFFF">```
 
 Specify separate RGB values: 
 
-```<link rel="stylesheet" href="http://daneden.me/baseline/24/255/42/85">```
+```<link rel="stylesheet" href="http://basehold.it/24/255/42/85">```
 
 ## Image Only Mode
 
@@ -25,8 +25,8 @@ Simple example:
 
 ```css
 html {
-	background-image: url(http://daneden.me/baseline/i/24); // 24px baseline
-	background-image: url(http://daneden.me/baseline/i/24/ff0000); // with Hex colour
-	background-image: url(http://daneden.me/baseline/i/24/255/0/0); // with RGB colour
+	background-image: url(http://basehold.it/i/24); // 24px baseline
+	background-image: url(http://basehold.it/i/24/ff0000); // with Hex colour
+	background-image: url(http://basehold.it/i/24/255/0/0); // with RGB colour
 }
 ```
