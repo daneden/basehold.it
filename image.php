@@ -46,10 +46,9 @@ if(isset($_GET['hex'])){
 
 // Default to 10 px height if they set no height.
 $settings['currentHeight'] = (isset($_GET['height']) && $_GET['height'] > $settings['minHeight']? $_GET['height'] : $settings['currentHeight']);
-if($settings['currentHeight'] != $_GET['height']){
-	// If the height is not the default height, store it.
-	$store['height'] = $settings['currentHeight'];
-}
+
+// Store Height
+$store['height'] = $settings['currentHeight'];
 
 // Stats class include
 if(!include_once('./Stats.class.php'))
