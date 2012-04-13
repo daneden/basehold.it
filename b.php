@@ -16,9 +16,13 @@ foreach ($_GET as $key => $value) {
 // Set the content-type to css
 header("Content-type: text/css");
 ?>
+body {
+	position: relative;
+}
+
 body:after {
 	position: absolute;
-	widh: auto;
+	width: auto;
 	height: auto;
 	z-index: 9999;
 	content: '';
