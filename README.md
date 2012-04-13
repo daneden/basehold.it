@@ -7,7 +7,7 @@ Here's an example demonstrating how to get a 24px baseline overlay on your site:
 
 Easy, huh?
 	
-## Further Samples:
+## Further Examples:
 
 Specify a 6 digit hex code: 
 
