@@ -26,7 +26,7 @@ if(isset($_GET['hex'])){
 			hexdec($colour[0][2])
 		);
 	}
-	
+
 // Check for provided R, G or B values
 }else if(isset($_GET['r']) && $_GET['r'] <= 255 && $_GET['r'] >= 0 && isset($_GET['g']) && $_GET['g'] <= 255 && $_GET['g'] >= 0 && isset($_GET['b']) && $_GET['b'] <= 255 && $_GET['b'] >= 0){
 	$colour = array($_GET['r'], $_GET['g'], $_GET['b']);
@@ -41,7 +41,7 @@ if(isset($_GET['hex'])){
 header("Content-type: image/png"); 
 
 // Default to 10 px height if they set no height.
-$height['currentHeight'] = (isset($_GET['height']) && $_GET['height'] > $settings['minHeight']? $_GET['height'] : $settings['currentHeight']);
+$settings['currentHeight'] = (isset($_GET['height']) && $_GET['height'] > $settings['minHeight']? $_GET['height'] : $settings['currentHeight']);
 
 // Create an image at the right dimensions.
 $im = imagecreate(4, $settings['currentHeight']);
