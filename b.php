@@ -10,24 +10,23 @@ if (!isset($_GET['height'])) die();
 
 $queryString = array();
 foreach ($_GET as $key => $value) {
-	if ($key == 'offset') continue;
 	$queryString[] = $key . '=' . $value;
 }
-
-$offset = isset($_GET['offset']) ? (0 - ($_GET['height'] - $_GET['offset'])) . "px" : 0;
 
 // Set the content-type to css
 header("Content-type: text/css");
 ?>
 body:after {
-	position: fixed;
+	position: absolute;
+	widh: auto;
+	height: auto;
 	z-index: 9999;
 	content: '';
 	display: block;
 	pointer-events: none;
-	top: <?php echo $offset; ?>;
+	top: 0;
+	right: 0;
 	bottom: 0;
 	left: 0;
-	right: 0;
 	background: url(/image.php?<?php echo implode('&', $queryString); ?>) repeat top left;
 }

@@ -1,7 +1,7 @@
 <?php
 /**
  * Baseline Image Creator
- * @author Michael Wright <michael@wserver.co.uk>
+ * @author Michael Wright	@MichaelW90
  */
 
 // Height settings
@@ -10,9 +10,12 @@ $settings = array(
 	'currentHeight' => 10, 	// default to 10px height
 	'minHeight' => 1		// ensure baseline is bigger than 1px
 );
+$store = array();
 
 // Check for provided hex colour
 if(isset($_GET['hex'])){
+	// Add hex to list of things to store in stats
+	$store['hex'] = $_GET['hex'];
 	// Split hex colour into parts
 	preg_match_all("/[a-f0-9]{2}/i", $_GET['hex'], $colour);
 	// Check we have a 3 parts to the hex
@@ -30,18 +33,33 @@ if(isset($_GET['hex'])){
 // Check for provided R, G or B values
 }else if(isset($_GET['r']) && $_GET['r'] <= 255 && $_GET['r'] >= 0 && isset($_GET['g']) && $_GET['g'] <= 255 && $_GET['g'] >= 0 && isset($_GET['b']) && $_GET['b'] <= 255 && $_GET['b'] >= 0){
 	$colour = array($_GET['r'], $_GET['g'], $_GET['b']);
-
+	// Setup array of what to store in stats
+	$store = array(
+		'r' => $_GET['r'],
+		'g' => $_GET['g'],
+		'b' => $_GET['b']
+	);
 // Use default colour if all fail
 }else{
 	$colour = $settings['colour'];
 }
 
+// Default to 10 px height if they set no height.
+$settings['currentHeight'] = (isset($_GET['height']) && $_GET['height'] > $settings['minHeight']? $_GET['height'] : $settings['currentHeight']);
+
+// Store Height
+$store['height'] = $settings['currentHeight'];
+
+// Stats class include
+if(!include_once('./Stats.class.php'))
+	die('Error including Stats.class.php');
+// Instantiate instance of class
+$stats = new Stats();
+// Store the stats!
+$stats -> store($store);
 
 // Set the content-type to png
 header("Content-type: image/png"); 
-
-// Default to 10 px height if they set no height.
-$settings['currentHeight'] = (isset($_GET['height']) && $_GET['height'] > $settings['minHeight']? $_GET['height'] : $settings['currentHeight']);
 
 // Create an image at the right dimensions.
 $im = imagecreate(4, $settings['currentHeight']);
