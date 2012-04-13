@@ -10,3 +10,12 @@ RewriteRule ^([0-9]+)\/([0-9a-zA-Z]{6})\/?$ b.php?height=$1&hex=$2 [L]
 
 # Rewrite for RGB Code
 RewriteRule ^([0-9]+)\/([0-9]{1,3})\/([0-9]{1,3})\/([0-9]{1,3})\/?$ b.php?height=$1&r=$2&g=$3&b=$4 [L]
+
+# Image only rewrite Height
+RewriteRule ^i\/([0-9]+)\/?$ image.php?height=$1 [L]
+
+# Image only rewrite for Hex Code [6 character only]
+RewriteRule ^i\/([0-9]+)\/([0-9a-zA-Z]{6})\/?$ image.php?height=$1&hex=$2 [L]
+
+# Image only rewrite for RGB Code
+RewriteRule ^i\/([0-9]+)\/([0-9]{1,3})\/([0-9]{1,3})\/([0-9]{1,3})\/?$ image.php?height=$1&r=$2&g=$3&b=$4 [L]
