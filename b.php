@@ -26,5 +26,5 @@ body:after {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: url(image.php?height=<?php echo implode('&', $queryString); ?>) repeat top left;
+	background: url(image.php?<?php echo implode('&', $queryString); ?>) repeat top left;
 }
