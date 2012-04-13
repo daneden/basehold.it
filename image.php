@@ -54,7 +54,7 @@ $line = imagecolorallocatealpha($im, $colour[0], $colour[1], $colour[2], 100);
 imagecolortransparent($im, $white);
 
 // Draw a line starting bottom left, for 2px along
-imageline($im, 0, $settings['currentHeight']-1, 2, $settings['currentHeight']-1, $line);
+imageline($im, 0, $height['currentHeight']-1, 2, $height['currentHeight']-1, $line);
 
 // Output the image as a png
 imagepng($im);
