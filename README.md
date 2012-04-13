@@ -17,16 +17,14 @@ Specify separate RGB values:
 
 ```<link rel="stylesheet" href="http://daneden.me/baseline/24/255/42/85">```
 
-## Baseline Image Examples:
+## Image Only Mode
 
-Specify height:
+You can use Baseline to grab the image on it's own, if you'd rather apply it as a background in your own stylesheet.
 
-```<link rel="stylesheet" href="http://daneden.me/baseline/i/24">```
+Simple example:
 
-Specify a 6 digit hex code: 
-
-```<link rel="stylesheet" href="http://daneden.me/baseline/i/24/DEEFFF">```
-
-Specify separate RGB values: 
-
-```<link rel="stylesheet" href="http://daneden.me/baseline/i/24/255/42/85">```
+```html {
+	background-image: url(http://daneden.me/baseline/i/24); // 24px baseline
+	background-image: url(http://daneden.me/baseline/i/24/ff0000); // with Hex colour
+	background-image: url(http://daneden.me/baseline/i/24/255/0/0); // with RGB colour
+}```
