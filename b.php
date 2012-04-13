@@ -14,7 +14,7 @@ foreach ($_GET as $key => $value) {
 	$queryString[] = $key . '=' . $value;
 }
 
-$offset = isset($_GET['offset']) ? $_GET['offset'] . "px" : 0;
+$offset = isset($_GET['offset']) ? (0 - ($_GET['height'] - $_GET['offset'])) . "px" : 0;
 
 // Set the content-type to css
 header("Content-type: text/css");
