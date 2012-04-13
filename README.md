@@ -23,8 +23,10 @@ You can use Baseline to grab the image on it's own, if you'd rather apply it as 
 
 Simple example:
 
-```html {
+```css
+html {
 	background-image: url(http://daneden.me/baseline/i/24); // 24px baseline
 	background-image: url(http://daneden.me/baseline/i/24/ff0000); // with Hex colour
 	background-image: url(http://daneden.me/baseline/i/24/255/0/0); // with RGB colour
-}```
+}
+```
