@@ -6,7 +6,9 @@
  */
 
 // Check if GET h is set as it is required.
-if (!isset($_GET['height'])) die();
+if (!isset($_GET['height'])) {
+	die('/* A height parameter is required. */');
+}
 
 $queryString = array();
 foreach ($_GET as $key => $value) {
