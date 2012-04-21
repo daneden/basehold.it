@@ -12,12 +12,14 @@ $settings = array(
 );
 $store = array();
 
+$parameters = isset($parameters) ? $parameters : $_GET;
+
 // Check for provided hex colour
-if(isset($_GET['hex'])){
+if(isset($parameters['hex'])){
 	// Add hex to list of things to store in stats
-	$store['hex'] = $_GET['hex'];
+	$store['hex'] = $parameters['hex'];
 	// Split hex colour into parts
-	preg_match_all("/[a-f0-9]{2}/i", $_GET['hex'], $colour);
+	preg_match_all("/[a-f0-9]{2}/i", $parameters['hex'], $colour);
 	// Check we have a 3 parts to the hex
 	if(count($colour[0]) != 3){
 		$colour = $settings['colour'];
@@ -31,13 +33,13 @@ if(isset($_GET['hex'])){
 	}
 
 // Check for provided R, G or B values
-}else if(isset($_GET['r']) && $_GET['r'] <= 255 && $_GET['r'] >= 0 && isset($_GET['g']) && $_GET['g'] <= 255 && $_GET['g'] >= 0 && isset($_GET['b']) && $_GET['b'] <= 255 && $_GET['b'] >= 0){
-	$colour = array($_GET['r'], $_GET['g'], $_GET['b']);
+}else if(isset($parameters['r']) && $parameters['r'] <= 255 && $parameters['r'] >= 0 && isset($parameters['g']) && $parameters['g'] <= 255 && $parameters['g'] >= 0 && isset($parameters['b']) && $parameters['b'] <= 255 && $parameters['b'] >= 0){
+	$colour = array($parameters['r'], $parameters['g'], $parameters['b']);
 	// Setup array of what to store in stats
 	$store = array(
-		'r' => $_GET['r'],
-		'g' => $_GET['g'],
-		'b' => $_GET['b']
+		'r' => $parameters['r'],
+		'g' => $parameters['g'],
+		'b' => $parameters['b']
 	);
 // Use default colour if all fail
 }else{
@@ -45,7 +47,7 @@ if(isset($_GET['hex'])){
 }
 
 // Default to 10 px height if they set no height.
-$settings['currentHeight'] = (isset($_GET['height']) && $_GET['height'] > $settings['minHeight']? $_GET['height'] : $settings['currentHeight']);
+$settings['currentHeight'] = (isset($parameters['height']) && $parameters['height'] > $settings['minHeight']? $parameters['height'] : $settings['currentHeight']);
 
 // Store Height
 $store['height'] = $settings['currentHeight'];
