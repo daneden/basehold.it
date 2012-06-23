@@ -36,3 +36,7 @@ body:after {
 	left: 0;
 	background: url(/image.php?<?php echo implode('&', $queryString); ?>) repeat top left;
 }
+
+body:active:after {
+	display: none;
+<?php
