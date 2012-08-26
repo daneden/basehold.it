@@ -1,0 +1,103 @@
+/*------------------------------------*\
+	$RESET
+\*------------------------------------*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+	margin:0;
+	padding:0;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img{ 
+	border:0;
+}
+address,caption,cite,dfn,th,var{
+	font-style:normal;
+	font-weight:normal;
+}
+caption,th{
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after{
+	content:'';
+}
+abbr,acronym{
+ 	border:0;
+}
+
+/*------------------------------------*\
+ 	$MAIN
+\*------------------------------------*/
+
+html {
+	background: -webkit-linear-gradient(#ddd, #f6f6f6 200px);
+	background:    -moz-linear-gradient(#ddd, #f6f6f6 200px);
+	background:     -ms-linear-gradient(#ddd, #f6f6f6 200px);
+	background: 	 -o-linear-gradient(#ddd, #f6f6f6 200px);
+	background: 		linear-gradient(#ddd, #f6f6f6 200px);
+	min-height: 100%;
+}
+
+body {
+	font: 100%/1.5 Georgia, Times New Roman, serif;
+	color: #222;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 24px;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1 {
+	font: 4.5em/1 Helvetica Neue, Helvetica, Arial, sans-serif;
+	margin: .3333em 0;
+	font-weight: 700;
+}
+
+h2 {
+	text-transform: uppercase;
+	color: #aaa;
+	letter-spacing: .3em;
+	margin-bottom: 1.5em;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px dashed;
+}
+
+a:hover {
+	background: rgba(0,0,0,.1);
+}
+
+code, pre {
+	background: #333;
+	border-radius: 5px;
+	padding: 12px;
+	line-height: 2em;
+	font-family:"Courier New", Courier, monospace;
+	font-size: .75em;
+	color: #eeffff;
+	display: block;
+}
+
+footer {
+	color: #999;
+}
+
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 3em;
+		line-height: 1;
+		margin: .5em 0;
+	}
+}
