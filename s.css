@@ -72,13 +72,12 @@ p {
 }
 
 a {
-	color: inherit;
+	color: #00aced;
 	text-decoration: none;
-	border-bottom: 1px dashed;
 }
 
 a:hover {
-	background: rgba(0,0,0,.1);
+	text-decoration: underline;
 }
 
 code, pre {
