@@ -36,11 +36,11 @@ abbr,acronym{
 \*------------------------------------*/
 
 html {
-	background: -webkit-linear-gradient(#ddd, #f6f6f6 200px);
-	background:    -moz-linear-gradient(#ddd, #f6f6f6 200px);
-	background:     -ms-linear-gradient(#ddd, #f6f6f6 200px);
-	background: 	 -o-linear-gradient(#ddd, #f6f6f6 200px);
-	background: 		linear-gradient(#ddd, #f6f6f6 200px);
+	background: -webkit-linear-gradient(#ddd, #fff 200px);
+	background:    -moz-linear-gradient(#ddd, #fff 200px);
+	background:     -ms-linear-gradient(#ddd, #fff 200px);
+	background: 	 -o-linear-gradient(#ddd, #fff 200px);
+	background: 		linear-gradient(#ddd, #fff 200px);
 	min-height: 100%;
 }
 
