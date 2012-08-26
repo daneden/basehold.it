@@ -45,7 +45,7 @@ html {
 }
 
 body {
-	font: 100%/1.5 Georgia, Times New Roman, serif;
+	font: 100%/1.5 Proxima Nova, Helvetica Neue, Helvetica, Arial, sans-serif;
 	color: #222;
 	max-width: 600px;
 	margin: 0 auto;
@@ -54,7 +54,8 @@ body {
 }
 
 h1 {
-	font: 4.5em/1 Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 4.5em;
+	line-height: 1;
 	margin: .3333em 0;
 	font-weight: 700;
 }
