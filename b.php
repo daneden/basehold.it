@@ -39,4 +39,5 @@ body:after {
 
 body:active:after {
 	display: none;
+}
 <?php
