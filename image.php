@@ -12,6 +12,11 @@ $settings = array(
 );
 $store = array();
 
+// Convenience function to see if a number is a valid rgb value
+function valid_rgb($val=NULL) {
+	return isset($val) && $val <= 255 && $val >= 0;
+}
+
 // Check for provided hex colour
 if(isset($_GET['hex'])){
 	// Add hex to list of things to store in stats
@@ -31,7 +36,11 @@ if(isset($_GET['hex'])){
 	}
 
 // Check for provided R, G or B values
-}else if(isset($_GET['r']) && $_GET['r'] <= 255 && $_GET['r'] >= 0 && isset($_GET['g']) && $_GET['g'] <= 255 && $_GET['g'] >= 0 && isset($_GET['b']) && $_GET['b'] <= 255 && $_GET['b'] >= 0){
+}else if(
+	valid_rgb($_GET['r']) && 
+	valid_rgb($_GET['g']) && 
+	valid_rgb($_GET['b']))
+{
 	$colour = array($_GET['r'], $_GET['g'], $_GET['b']);
 	// Setup array of what to store in stats
 	$store = array(
@@ -39,6 +48,12 @@ if(isset($_GET['hex'])){
 		'g' => $_GET['g'],
 		'b' => $_GET['b']
 	);
+
+	// Add alpha if present
+	if (isset($_GET['a']) && $_GET['a'] >= 0 && $_GET['a'] <= 1) { 
+		$colour[] = $_GET['a'];
+		$store['a'] = $_GET['a'];
+	}
 // Use default colour if all fail
 }else{
 	$colour = $settings['colour'];
@@ -66,7 +81,11 @@ $im = imagecreate(4, $settings['currentHeight']);
 
 // Declare some colours
 $white = imagecolorallocate($im, 255, 255, 255);  
-$line = imagecolorallocatealpha($im, $colour[0], $colour[1], $colour[2], 100);
+if (count($colour) == 4) {
+	$line = imagecolorallocatealpha($im, $colour[0], $colour[1], $colour[2], 127-$colour[3]*127);
+} else {
+	$line = imagecolorallocatealpha($im, $colour[0], $colour[1], $colour[2], 100);
+}
 
 // Set the image to use white as transparent
 imagecolortransparent($im, $white);
