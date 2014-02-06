@@ -17,6 +17,10 @@ Specify separate RGB values:
 
 ```<link rel="stylesheet" href="http://basehold.it/24/255/42/85">```
 
+Specify 50% alpha using RGBA: 
+
+```<link rel="stylesheet" href="http://basehold.it/24/255/42/85/0.5">```
+
 ## Image Only Mode
 
 You can use Baseline to grab the image on it's own, if you'd rather apply it as a background in your own stylesheet.
@@ -28,5 +32,6 @@ html {
 	background-image: url(http://basehold.it/i/24); // 24px baseline
 	background-image: url(http://basehold.it/i/24/ff0000); // with Hex colour
 	background-image: url(http://basehold.it/i/24/255/0/0); // with RGB colour
+	background-image: url(http://basehold.it/i/24/255/0/0/0.85); // with RGBA colour
 }
 ```

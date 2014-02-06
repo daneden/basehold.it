@@ -15,14 +15,16 @@
 	<p><code>&lt;link rel="stylesheet" href="http://basehold.it/24"></code></p>
 	<p>Just like that. Easy, right? That'll get you a 24px baseline grid overlay, just like the one you can see on this page. For more information, or to look at the code (and maybe even contribute some code yourself), check out <a href="https://github.com/daneden/Basehold.it">the repo on Github.</a></p>
 	<h2>Additional options</h2>
-	<p>You can also specify a custom colour using Hex values or RGB values, like so:</p>
-	<p><code>&lt;link rel="stylesheet" href="http://basehold.it/24/ff0000"></code></p>
-	<p><code>&lt;link rel="stylesheet" href="http://basehold.it/24/255/0/0"></code></p>
+	<p>You can also specify a custom colour using Hex values, RGB values, or RGBA values, like so:</p>
+	<p><code>&lt;link rel="stylesheet" href="http://basehold.it/24/ff0000"&gt;</code></p>
+	<p><code>&lt;link rel="stylesheet" href="http://basehold.it/24/255/0/0"&gt;</code></p>
+	<p><code>&lt;link rel="stylesheet" href="http://basehold.it/24/255/42/85/0.5"&gt;</code></p>
 	<p>Neato! One last thing - if you just want the image, and not the pseudo element, so that you can apply it in your own CSS file, that's easy too. Simply write your CSS like this:</p>
 	<p><code>html {
     background-image: url(http://basehold.it/i/24); // 24px baseline
     background-image: url(http://basehold.it/i/24/ff0000); // with Hex colour
     background-image: url(http://basehold.it/i/24/255/0/0); // with RGB colour
+    background-image: url(http://basehold.it/i/24/255/0/0/0.85); // with RGBA colour
 }</code></p>
 	<footer role="contentinfo">
 		<p>Another thing by <a href="http://twitter.com/_dte">Dan Eden</a> &amp; <a href="http://twitter.com/michaelw90">Michael Wright.</a></p>
