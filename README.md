@@ -35,3 +35,13 @@ html {
 	background-image: url(http://basehold.it/i/24/255/0/0/0.85); // with RGBA colour
 }
 ```
+
+## Bookmarklet
+
+Just add this as a bookmark:
+
+```js
+javascript:(function(){var%20link=document.createElement("link");link.setAttribute("rel","stylesheet");link.setAttribute("href","http://basehold.it/"+parseInt(window.getComputedStyle(document.body).getPropertyValue("line-height"),10));document.head.appendChild(link);})()
+```
+
+This will add the default grid according to your body line-height (using `getComputedStyle`).
