@@ -48,7 +48,7 @@ This will add the default grid according to your body line-height (using `getCom
 
 ## Sass Mixin
 
-@mixin baseline-grid( $line-height:24 ) {
+``@mixin baseline-grid( $line-height:24 ) {
 	
 
 	position: relative;
@@ -70,8 +70,11 @@ This will add the default grid according to your body line-height (using `getCom
 	&:active:after {
 		display: none;
 	}
-}
+}``
 
 **Useage** 
-body { @include baseline-grid(24); }
-( change 24 to your grid size ) 
+``body { 
+	@include baseline-grid(24);
+	/* change 24 to your grid size */
+}
+``
