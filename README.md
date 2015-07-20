@@ -45,3 +45,36 @@ javascript:(function(){var%20link=document.createElement("link");link.setAttribu
 ```
 
 This will add the default grid according to your body line-height (using `getComputedStyle`).
+
+## Sass Mixin
+
+@mixin baseline-grid( $line-height:24 ) {
+	/* 
+	* Useage ( change 24 to your grid size ) 
+	* 
+	* body {
+	*      @include baseline-grid(24);
+	* }
+	* 
+	*/
+
+	position: relative;
+
+	&:after {
+		position: absolute;
+		width: auto;
+		height: auto;
+		z-index: 9999;
+		content: '';
+		display: block;
+		pointer-events: none;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: url(http://basehold.it/image.php?height=#{$line-height}) repeat top left;
+	}
+	&:active:after {
+		display: none;
+	}
+}
