@@ -76,7 +76,7 @@ This will add the default grid according to your body line-height (using `getCom
 }
 ```
 
-**Sass Mixin Useage** 
+**Sass Mixin Usage** 
 ```
 body { 
 
