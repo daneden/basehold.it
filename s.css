@@ -10,7 +10,7 @@ table{
 	border-collapse:collapse;
 	border-spacing:0;
 }
-fieldset,img{ 
+fieldset,img{
 	border:0;
 }
 address,caption,cite,dfn,th,var{
@@ -36,34 +36,29 @@ abbr,acronym{
 \*------------------------------------*/
 
 html {
-	background: -webkit-linear-gradient(#ddd, #fff 200px);
-	background:    -moz-linear-gradient(#ddd, #fff 200px);
-	background:     -ms-linear-gradient(#ddd, #fff 200px);
-	background: 	 -o-linear-gradient(#ddd, #fff 200px);
-	background: 		linear-gradient(#ddd, #fff 200px);
 	min-height: 100%;
 }
 
 body {
-	font: 100%/1.5 Proxima Nova, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font: 100%/1.5 -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
 	color: #222;
 	max-width: 600px;
 	margin: 0 auto;
 	padding: 24px;
-	-webkit-font-smoothing: antialiased;
 }
 
 h1 {
 	font-size: 4.5em;
 	line-height: 1;
+  letter-spacing: -.02em;
 	margin: .3333em 0;
 	font-weight: 700;
 }
 
 h2 {
-	text-transform: uppercase;
-	color: #aaa;
-	letter-spacing: .3em;
+	color: #777;
+  text-transform: uppercase;
+	letter-spacing: .1em;
 	margin-bottom: 1.5em;
 }
 
@@ -72,7 +67,7 @@ p {
 }
 
 a {
-	color: #00aced;
+	color: #E05362;
 	text-decoration: none;
 }
 
@@ -83,12 +78,15 @@ a:hover {
 code, pre {
 	background: #333;
 	border-radius: 5px;
-	padding: 12px;
+	padding: 12px 16px;
 	line-height: 2em;
-	font-family:"Courier New", Courier, monospace;
+	font-family: "Monaco", "Courier New", Courier, monospace;
 	font-size: .75em;
 	color: #eeffff;
-	display: block;
+}
+
+pre {
+  overflow: auto;
 }
 
 footer {
