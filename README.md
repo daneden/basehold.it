@@ -1,4 +1,6 @@
 # Baseline
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdaneden%2FBasehold.it.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdaneden%2FBasehold.it?ref=badge_shield)
+
 Get a baseline grid overlay on your site in one painless, javascript-free step.
 
 Here's an example demonstrating how to get a 24px baseline overlay on your site:
@@ -86,3 +88,7 @@ body {
 	
 }
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdaneden%2FBasehold.it.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdaneden%2FBasehold.it?ref=badge_large)
