@@ -2,5 +2,6 @@
   "builds": [
     { "src": "*.html", "use": "@now/static" },
     { "src": "*.php", "use": "@now/php" }
-  ]
+  ],
+  "version": 2
 }
