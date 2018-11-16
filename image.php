@@ -56,6 +56,8 @@ $settings['currentHeight'] = (
 		: $settings['currentHeight']
 );
 
+phpinfo();
+
 // Create an image at the right dimensions.
 $im = imagecreatetruecolor(4, $settings['currentHeight']);
 
