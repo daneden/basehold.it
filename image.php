@@ -57,7 +57,7 @@ $settings['currentHeight'] = (
 );
 
 // Create an image at the right dimensions.
-$im = imagecreate(4, $settings['currentHeight']);
+$im = imagecreatetruecolor(4, $settings['currentHeight']);
 
 // Declare some colors
 $white = imagecolorallocate($im, 255, 255, 255);
