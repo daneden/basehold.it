@@ -73,6 +73,8 @@ imagecolortransparent($im, $white);
 // Draw a line starting bottom left, for 2px along
 imageline($im, 0, $settings['currentHeight']-1, 2, $settings['currentHeight']-1, $line);
 
+die("Exiting early");
+
 // Set the content-type to png
 header("Content-type: image/png");
 
