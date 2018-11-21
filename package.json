@@ -1,0 +1,15 @@
+{
+  "name": "Basehold.it",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/daneden/Basehold.it",
+  "author": "Daniel Eden <dan.eden@me.com>",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.1.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.2"
+  }
+}
