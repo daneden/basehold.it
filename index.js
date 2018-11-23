@@ -1,25 +1,26 @@
 const path = require("path")
 const express = require("express")
 const app = express()
-const { createCanvas } = require("canvas")
 
-const createPNG = (options, res) => {
+const createSVG = (options, res) => {
   const WIDTH = 4
   const { color = "rgba(0,0,0,.8)", height } = options
+  const svg = `
+    <svg
+      viewbox="0 0 ${WIDTH} ${height}"
+      xmlns="http://www.w3.org/2000/svg">
+      <line
+        x1="0"
+        x2="${WIDTH}"
+        y1="${height}"
+        y2="${height}"
+        stroke="${color}"
+      />
+    </svg>
+  `
 
-  // Canvas size is doubled for hi-dpi screens
-  const canvas = createCanvas(WIDTH * 2, height * 2)
-  const ctx = canvas.getContext("2d")
-
-  ctx.strokeStyle = color
-  ctx.beginPath()
-  ctx.moveTo(0, height * 2 - 1)
-  ctx.lineTo(WIDTH * 2, height * 2 - 1)
-  ctx.stroke()
-
-  const stream = canvas.createPNGStream()
-  res.type("png")
-  stream.pipe(res)
+  res.type("image/svg+xml")
+  res.send(svg)
 }
 
 // This function takes the arguments passed to the URL and turns them into an
@@ -61,7 +62,7 @@ app.get(/^\/i\/([0-9]{1,3})(\/(.*))?/, (req, res) => {
     height: Number(height),
   }
 
-  return createPNG(options, res)
+  return createSVG(options, res)
 })
 
 // Requests for stylesheets
