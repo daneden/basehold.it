@@ -12,6 +12,6 @@
     "prettier": "^1.15.2"
   },
   "scripts": {
-    "build": "ncc index.js -o out.js"
+    "start": "node index.js"
   }
 }
