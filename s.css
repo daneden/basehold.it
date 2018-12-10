@@ -1,88 +1,62 @@
-/*------------------------------------*\
-	$RESET
-\*------------------------------------*/
-
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
-	margin:0;
-	padding:0;
-}
-table{
-	border-collapse:collapse;
-	border-spacing:0;
-}
-fieldset,img{
-	border:0;
-}
-address,caption,cite,dfn,th,var{
-	font-style:normal;
-	font-weight:normal;
-}
-caption,th{
-	text-align:left;
-}
-h1,h2,h3,h4,h5,h6{
-	font-size:100%;
-	font-weight:normal;
-}
-q:before,q:after{
-	content:'';
-}
-abbr,acronym{
- 	border:0;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
 }
 
-/*------------------------------------*\
- 	$MAIN
-\*------------------------------------*/
-
+/* Main styles */
 html {
-	min-height: 100%;
+  min-height: 100%;
 }
 
 body {
-	font: 100%/1.5 -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
-	color: #222;
-	max-width: 600px;
-	margin: 0 auto;
-	padding: 24px;
+  font: 100%/1.5 -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
+    Arial, sans-serif;
+  color: #222;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
 }
 
 h1 {
-	font-size: 4.5em;
-	line-height: 1;
-  letter-spacing: -.02em;
-	margin: .3333em 0;
-	font-weight: 700;
+  font-size: 4.5em;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin: 0.3333em 0;
+  font-weight: 700;
 }
 
 h2 {
-	color: #777;
+  font-size: inherit;
+  color: #777;
   text-transform: uppercase;
-	letter-spacing: .1em;
-	margin-bottom: 1.5em;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5em;
 }
 
 p {
-	margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 a {
-	color: #E05362;
-	text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
-	text-decoration: underline;
+  color: #e05362;
 }
 
-code, pre {
-	background: #333;
-	border-radius: 5px;
-	padding: 12px 16px;
-	line-height: 2em;
-	font-family: "Monaco", "Courier New", Courier, monospace;
-	font-size: .75em;
-	color: #eeffff;
+code,
+pre {
+  background: #333;
+  border-radius: 5px;
+  padding: 12px 16px;
+  line-height: 2em;
+  font-family: "Monaco", "Courier New", Courier, monospace;
+  font-size: 0.75em;
+  color: #eeffff;
 }
 
 pre {
@@ -90,13 +64,13 @@ pre {
 }
 
 footer {
-	color: #999;
+  color: #999;
 }
 
 @media screen and (max-width: 480px) {
-	h1 {
-		font-size: 3em;
-		line-height: 1;
-		margin: .5em 0;
-	}
+  h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0.5em 0;
+  }
 }

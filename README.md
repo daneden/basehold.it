@@ -30,10 +30,10 @@ Simple example:
 
 ```css
 html {
-  background-image: url(http://basehold.it/i/24); // 24px baseline
-  background-image: url(http://basehold.it/i/24/ff0000); // with Hex colour
-  background-image: url(http://basehold.it/i/24/255/0/0); // with RGB colour
-  background-image: url(http://basehold.it/i/24/255/0/0/0.85); // with RGBA colour
+  background-image: url(http://basehold.it/i/24); /* 24px baseline */
+  background-image: url(http://basehold.it/i/24/ff0000); /* with Hex colour */
+  background-image: url(http://basehold.it/i/24/255/0/0); /* with RGB colour */
+  background-image: url(http://basehold.it/i/24/255/0/0/0.85); /* with RGBA colour */
 }
 ```
 
