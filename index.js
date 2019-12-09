@@ -2,6 +2,8 @@ const path = require("path")
 const express = require("express")
 const app = express()
 
+const PORT = process.env.port | 8000
+
 const createSVG = (options, res) => {
   const WIDTH = 4
   const { color = "rgba(0,0,0,.8)", height } = options
@@ -86,7 +88,7 @@ body:after {
 	right: 0;
 	bottom: 0;
 	left: 0;
-  background: url(./i/${height}${args !== undefined ? "/" + args : ""});
+  background: url(/i/${height}${args !== undefined ? "/" + args : ""});
   background-size: 4px ${height}px;
 }
 
@@ -97,4 +99,5 @@ body:active:after {
 })
 
 // Start the app
-app.listen(process.env.PORT)
+app.listen(PORT)
+console.log(`Process started on port ${PORT}`)
