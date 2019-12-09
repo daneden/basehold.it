@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "src": "/([\\d]{1,3})/?(.*)",
+      "dest": "/api/stylesheet/$1?args=$2"
+    },
+    {
+      "src": "/i/([\\d]{1,3})/?(.*)",
+      "dest": "/api/image/$1?args=$2"
+    }
+  ]
+}

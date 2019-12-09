@@ -5,13 +5,24 @@
   "repository": "https://github.com/daneden/Basehold.it",
   "author": "Daniel Eden <dan.eden@me.com>",
   "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
   "dependencies": {
-    "express": "^4.16.4"
+    "@types/isomorphic-fetch": "^0.0.35",
+    "@zeit/next-css": "^1.0.1",
+    "isomorphic-fetch": "^2.2.1",
+    "next": "9.1.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "prettier": "^1.15.2"
-  },
-  "scripts": {
-    "start": "node index.js"
+    "@types/node": "^12.12.14",
+    "@types/react": "^16.9.15",
+    "prettier": "^1.15.2",
+    "typescript": "^3.7.3"
   }
 }
