@@ -49,14 +49,14 @@ const argsToRgba = (args?: string[]) => {
  */
 export default function(req: NextApiRequest, res: NextApiResponse) {
   const {
-    query: { baselineSize: _size, args: _args },
+    query: { size: _size, args: _args },
   } = req
 
   /**
    * TODO: This is a temporary fix until Now's routing is the same in prod as
    * it is in `now dev`
    */
-  const [baselineSize, args] = String(_size).includes('?args=')
+  const [size, args] = String(_size).includes('?args=')
     ? String(_size).split('?args=')
     : [_size, _args]
 
@@ -64,7 +64,7 @@ export default function(req: NextApiRequest, res: NextApiResponse) {
     typeof args == 'string' && args !== '' ? args.split('/') : undefined
   )
 
-  console.log('Generating image:', `${baselineSize}px ${args}`)
+  console.log('Generating image:', `${size}px ${args}`)
 
-  return createSVG({ height: baselineSize, color }, res)
+  return createSVG({ height: size, color }, res)
 }

@@ -6,18 +6,18 @@ import { NextApiRequest, NextApiResponse } from 'next'
  */
 export default function(req: NextApiRequest, res: NextApiResponse) {
   const {
-    query: { baselineSize: _size, args: _args },
+    query: { size: _size, args: _args },
   } = req
 
   /**
    * TODO: This is a temporary fix until Now's routing is the same in prod as
    * it is in `now dev`
    */
-  const [baselineSize, args] = String(_size).includes('?args=')
+  const [size, args] = String(_size).includes('?args=')
     ? String(_size).split('?args=')
     : [_size, _args]
 
-  console.log('Generating stylesheet:', `${baselineSize}px ${args}`)
+  console.log('Generating stylesheet:', `${size}px ${args}`)
 
   res.setHeader('Content-Type', 'text/css')
   res.send(`
@@ -37,10 +37,10 @@ body:after {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(./i/${baselineSize}${
+  background: url(./i/${size}${
     typeof args === 'string' && args !== '' ? `/${args}` : ''
   });
-  background-size: 4px ${baselineSize}px;
+  background-size: 4px ${size}px;
 }
 
 body:active:after {
