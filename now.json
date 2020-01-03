@@ -1,6 +1,11 @@
 {
   "routes": [
     {
+      "src": "/.*",
+      "headers": { "Cache-Control": "s-maxage=604800, stale-while-revalidate" },
+      "continue": true
+    },
+    {
       "src": "/([\\d]{1,3})/?(.*)",
       "dest": "/api/stylesheet?size=$1&args=$2"
     },
