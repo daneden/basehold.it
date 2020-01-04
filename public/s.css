@@ -30,9 +30,7 @@ h1 {
 
 h2 {
   font-size: inherit;
-  color: #777;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  color: #555;
   margin-bottom: 1.5em;
 }
 
@@ -64,7 +62,7 @@ pre {
 }
 
 footer {
-  color: #999;
+  color: #666;
 }
 
 @media screen and (max-width: 480px) {

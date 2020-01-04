@@ -1,24 +1,11 @@
-import Head from 'next/head'
 import React from 'react'
 
 export default function Index() {
   return (
     <>
-      <Head>
-        <title>
-          Basehold.it - quick, painless, javascript-free baseline overlays
-        </title>
-        <meta charSet="UTF-8" />
-        <meta
-          name="viewport"
-          content="initial-scale=1.0,user-scalable=no,width=device-width"
-        />
-        <link rel="stylesheet" href="/24" />
-        <link rel="stylesheet" href="s.css" />
-      </Head>
       <h1>Basehold.it</h1>
       <h2 className="tagline">
-        A quick, painless, javascript-free baseline overlay.
+        A quick, painless, JavaScript-free baseline overlay.
       </h2>
       <p>
         Baseline grids are super helpful for web designers, allowing us to
