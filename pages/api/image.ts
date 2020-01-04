@@ -65,6 +65,7 @@ export default function(req: NextApiRequest, res: NextApiResponse) {
   )
 
   console.log('Generating image:', `${size}px ${args}`)
+  console.log(`Referer: ${req.headers.referer}`)
 
   return createSVG({ height: size, color }, res)
 }

@@ -18,6 +18,7 @@ export default function(req: NextApiRequest, res: NextApiResponse) {
     : [_size, _args]
 
   console.log('Generating stylesheet:', `${size}px ${args}`)
+  console.log(`Referer: ${req.headers.referer}`)
 
   res.setHeader('Content-Type', 'text/css')
   res.send(`
