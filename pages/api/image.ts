@@ -49,16 +49,8 @@ const argsToRgba = (args?: string[]) => {
  */
 export default function(req: NextApiRequest, res: NextApiResponse) {
   const {
-    query: { size: _size, args: _args },
+    query: { size, args },
   } = req
-
-  /**
-   * TODO: This is a temporary fix until Now's routing is the same in prod as
-   * it is in `now dev`
-   */
-  const [size, args] = String(_size).includes('?args=')
-    ? String(_size).split('?args=')
-    : [_size, _args]
 
   const color = argsToRgba(
     typeof args == 'string' && args !== '' ? args.split('/') : undefined
