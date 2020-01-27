@@ -1,4 +1,3 @@
-// pages/_app.js
 import App from 'next/app'
 import Head from 'next/head'
 import React from 'react'
