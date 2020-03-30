@@ -20,7 +20,7 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@types/node": "^13.9.4",
+    "@types/node": "^13.9.5",
     "@types/react": "^16.9.26",
     "prettier": "^2.0.2",
     "typescript": "^3.8.3"
