@@ -18,7 +18,7 @@ export default function Index() {
         stylesheet:
       </p>
       <p>
-        <pre>&lt;link rel="stylesheet" href="//basehold.it/24"></pre>
+        <pre>&lt;link rel="stylesheet" href="//basehold.it/24"&gt;</pre>
       </p>
       <p>
         Just like that. Easy, right? That'll get you a 24px baseline grid
