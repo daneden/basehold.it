@@ -44,9 +44,9 @@ export default function Index() {
         </pre>
       </p>
       <p>
-        Neato! One last thing - if you just want the image, and not the pseudo
-        element, so that you can apply it in your own CSS file, that's easy too.
-        Simply write your CSS like this:
+        One last thing - if you just want the image, and not the pseudo element,
+        so that you can apply it in your own CSS file, that's easy too. Simply
+        write your CSS like this:
       </p>
       <p>
         <pre>
