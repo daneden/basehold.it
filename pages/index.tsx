@@ -25,7 +25,7 @@ export default function Index() {
         overlay, just like the one you can see on this page. For more
         information, or to look at the code (and maybe even contribute some code
         yourself), check out{' '}
-        <a href="https://github.com/daneden/Basehold.it">the repo on Github.</a>
+        <a href="https://github.com/daneden/Basehold.it">the repo on GitHub.</a>
       </p>
       <h2>Additional options</h2>
       <p>
