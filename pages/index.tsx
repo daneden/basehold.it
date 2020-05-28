@@ -14,8 +14,8 @@ export default function Index() {
         overlay on our designs. Enter <strong>Basehold.it</strong>.
       </p>
       <p>
-        Using Basehold.it couldn't be easier. Simply add it like any other
-        stylesheet:
+        Using Basehold.it couldn't be easier. Simply add it to your web projects
+        like any other stylesheet:
       </p>
       <p>
         <pre>&lt;link rel="stylesheet" href="//basehold.it/24"&gt;</pre>
