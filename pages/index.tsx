@@ -51,10 +51,10 @@ export default function Index() {
       <p>
         <pre>
           {`html {
-    background-image: url(//basehold.it/i/24); /* 24px baseline */
-    background-image: url(//basehold.it/i/24/ff0000); /* with Hex colour */
-    background-image: url(//basehold.it/i/24/255/0/0); /* with RGB colour */
-    background-image: url(//basehold.it/i/24/255/0/0/0.85); /* with RGBA colour */
+  background-image: url(//basehold.it/i/24); /* 24px baseline */
+  background-image: url(//basehold.it/i/24/ff0000); /* with Hex colour */
+  background-image: url(//basehold.it/i/24/255/0/0); /* with RGB colour */
+  background-image: url(//basehold.it/i/24/255/0/0/0.85); /* with RGBA colour */
 }`}
         </pre>
       </p>
