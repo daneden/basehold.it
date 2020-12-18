@@ -15,7 +15,7 @@
     "@types/isomorphic-fetch": "^0.0.35",
     "@zeit/next-css": "^1.0.1",
     "isomorphic-fetch": "^2.2.1",
-    "next": "9.5.4",
+    "next": "10.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
