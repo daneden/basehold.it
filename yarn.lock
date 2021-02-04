@@ -1170,10 +1170,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.6.tgz#f4c7ec43e81b319a9815115031709f26987891f0"
   integrity sha512-3c+yGKvVP5Y9TYBEibGNR+kLtijnj7mYrXRg+WpFb2X9xm04g/DXYkfg4hmzJQosc9snFNUPkbYIhu+KAm6jJw==
 
-"@types/node@^14.11.5":
-  version "14.11.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.11.5.tgz#fecad41c041cae7f2404ad4b2d0742fdb628b305"
-  integrity sha512-jVFzDV6NTbrLMxm4xDSIW/gKnk8rQLF9wAzLWIOg+5nU6ACrIMndeBdXci0FGtqJbP9tQvm6V39eshc96TO2wQ==
+"@types/node@^14.14.24":
+  version "14.14.24"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.24.tgz#541c00e4f7c41c8f108bd5b045248b5224c62946"
+  integrity sha512-6BAlkS4seVjszhrwN0W1WabqWwuJwcYF36Z1rPPyQm80LGRKsIeUPdzI51TezXenjetFNy1gRTpuDn1NBg33LA==
 
 "@types/prop-types@*":
   version "15.7.3"
