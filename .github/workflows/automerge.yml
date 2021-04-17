@@ -1,0 +1,14 @@
+name: Enable automerge for dependabot PRs
+
+on:
+  pull_request_target:
+
+jobs:
+  merge-me:
+    name: Enable automerge for dependabot PRs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enable automerge for dependabot PRs
+        uses: daneden/enable-automerge-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
