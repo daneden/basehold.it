@@ -67,10 +67,10 @@
   resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.1.6.tgz#a350caf42975e7197b24b495b8d764eec7e6a36e"
   integrity sha512-4ZEwiRuZEicXhXqmhw3+de8Z4EpOLQj/gp+D9fFWo6ii6W1kBkNNvvEx4A90ugppu+74pT1lIJnOuz3A9oQeJA==
 
-"@types/isomorphic-fetch@^0.0.35":
-  version "0.0.35"
-  resolved "https://registry.yarnpkg.com/@types/isomorphic-fetch/-/isomorphic-fetch-0.0.35.tgz#c1c0d402daac324582b6186b91f8905340ea3361"
-  integrity sha512-DaZNUvLDCAnCTjgwxgiL1eQdxIKEpNLOlTNtAgnZc50bG2copGhRrFN9/PxPBuJe+tZVLCbQ7ls0xveXVRPkvw==
+"@types/isomorphic-fetch@^0.0.36":
+  version "0.0.36"
+  resolved "https://registry.yarnpkg.com/@types/isomorphic-fetch/-/isomorphic-fetch-0.0.36.tgz#3a6d8f63974baf26b10fd1314db910633108a769"
+  integrity sha512-ulw4d+vW1HKn4oErSmNN2HYEcHGq0N1C5exlrMM0CRqX1UUpFhGb5lwiom5j9KN3LBJJDLRmYIZz1ghm7FIzZw==
 
 "@types/node@^17.0.43":
   version "17.0.43"
