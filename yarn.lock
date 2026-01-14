@@ -208,10 +208,10 @@
   dependencies:
     tslib "^2.8.0"
 
-"@types/isomorphic-fetch@^0.0.36":
-  version "0.0.36"
-  resolved "https://registry.yarnpkg.com/@types/isomorphic-fetch/-/isomorphic-fetch-0.0.36.tgz#3a6d8f63974baf26b10fd1314db910633108a769"
-  integrity sha512-ulw4d+vW1HKn4oErSmNN2HYEcHGq0N1C5exlrMM0CRqX1UUpFhGb5lwiom5j9KN3LBJJDLRmYIZz1ghm7FIzZw==
+"@types/isomorphic-fetch@^0.0.39":
+  version "0.0.39"
+  resolved "https://registry.yarnpkg.com/@types/isomorphic-fetch/-/isomorphic-fetch-0.0.39.tgz#889573a72ca637bc1a665910a41ff1cb3b52011f"
+  integrity sha512-I0gou/ZdA1vMG7t7gMzL7VYu2xAKU78rW9U1l10MI0nn77pEHq3tQqHQ8hMmXdMpBlkxZOorjI4sO594Z3kKJw==
 
 "@types/node@^25.0.7":
   version "25.0.7"
